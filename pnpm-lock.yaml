@@ -200,6 +200,9 @@ importers:
       '@11ty/eleventy':
         specifier: ^3.1.7
         version: 3.1.7
+      '@11ty/eleventy-plugin-rss':
+        specifier: ^3.1.0
+        version: 3.1.0
 
 packages:
 
@@ -221,6 +224,9 @@ packages:
   '@11ty/eleventy-plugin-bundle@3.0.7':
     resolution: {integrity: sha512-QK1tRFBhQdZASnYU8GMzpTdsMMFLVAkuU0gVVILqNyp09xJJZb81kAS3AFrNrwBCsgLxTdWHJ8N64+OTTsoKkA==}
     engines: {node: '>=18'}
+
+  '@11ty/eleventy-plugin-rss@3.1.0':
+    resolution: {integrity: sha512-eby7wIYU3XBTAel8qPzbZSEhzNg/WXcAqNULYRqzMBU+gVlx4SL2mUvWDYxkp72KJqefnMMIo2Zz6w09N6S5XQ==}
 
   '@11ty/eleventy-utils@2.0.7':
     resolution: {integrity: sha512-6QE+duqSQ0GY9rENXYb4iPR4AYGdrFpqnmi59tFp9VrleOl0QSh8VlBr2yd6dlhkdtj7904poZW5PvGr9cMiJQ==}
@@ -533,6 +539,10 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
+  obug@3.0.0:
+    resolution: {integrity: sha512-5vvB5+W7ePv+p3uqxi+RcW1XAzLW0/hxt3/4X4Lc4qHudzOhmBiBwOY6DRob4WnanAEGvNcLjF+KNOufrUoEQw==}
+    engines: {node: '>=12.20.0'}
+
   on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
     engines: {node: '>= 0.8'}
@@ -698,6 +708,13 @@ snapshots:
     transitivePeerDependencies:
       - posthtml
       - supports-color
+
+  '@11ty/eleventy-plugin-rss@3.1.0':
+    dependencies:
+      '@11ty/eleventy-utils': 2.0.7
+      '@11ty/posthtml-urls': 1.0.3
+      obug: 3.0.0
+      posthtml: 0.16.7
 
   '@11ty/eleventy-utils@2.0.7': {}
 
@@ -1003,6 +1020,8 @@ snapshots:
       esm-import-transformer: 3.0.5
 
   normalize-path@3.0.0: {}
+
+  obug@3.0.0: {}
 
   on-finished@2.4.1:
     dependencies:

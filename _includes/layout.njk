@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or metadata.name }}</title>
+  <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ metadata.name }}">
+  <style>
+    body { max-width: 38em; margin: 1em auto; padding: 0 1em;
+           font: 16px/1.4 ui-monospace, monospace; }
+    a { color: inherit; }
+    .posts { list-style: none; padding: 0; margin: 2em 0; }
+    .posts li { padding: 0.4em 0; border-bottom: 1px solid #eee; }
+    .posts .date { color: #999; font-size: 0.85em; margin-left: 0.5em; }
+    footer { margin-top: 2em; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+{% include "header.njk" %}
+{{ content | safe }}
+{% include "footer.njk" %}
+</body>
+</html>
