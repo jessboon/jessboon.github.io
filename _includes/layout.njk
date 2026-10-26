@@ -11,7 +11,16 @@
   <meta property="og:url" content="{{ metadata.url }}{{ page.url | encodeURI }}">
   {% if description %}<meta property="og:description" content="{{ description }}">
   <meta name="description" content="{{ description }}">{% endif %}
+  {% if "/blog/" in page.url %}
+  {%- set slug = page.url | replace("/blog/", "") | replace("/", "") %}
+  <meta property="og:image" content="{{ metadata.url }}/og/{{ slug }}.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
   <meta name="twitter:card" content="summary">
+  {% endif %}
   <style>
     body { max-width: 38em; margin: 1em auto; padding: 0 1em;
            font: 17px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text",

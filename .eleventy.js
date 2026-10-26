@@ -2,6 +2,8 @@ import rssPlugin from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
   eleventyConfig.ignores.add("AGENTS.md");
+  eleventyConfig.addPassthroughCopy("og");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addPlugin(rssPlugin);
 
