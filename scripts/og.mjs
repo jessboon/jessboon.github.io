@@ -52,6 +52,9 @@ function svgFor(title) {
   const lineHeight = size * 1.3;
   const titleBlockHeight = lines.length * lineHeight;
   const firstBaseline = (HEIGHT - titleBlockHeight) / 2 + size * 0.35;
+  const titleTexts = lines
+    .map((line, i) => `<text x="${MARGIN}" y="${(firstBaseline + i * lineHeight).toFixed(1)}" font-family="Menlo" font-size="${size}" font-weight="bold" fill="rgb(11, 11, 11)">${esc(line)}</text>`)
+    .join("\n  ");
   return `<svg width="${WIDTH}" height="${HEIGHT}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -62,9 +65,9 @@ function svgFor(title) {
   <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#g)"/>
   <rect x="${MARGIN}" y="76" width="14" height="14" fill="#111"/>
   <text x="108" y="90" font-family="Menlo" font-size="26" fill="#8b8b8b">jess boonekamp</text>
-  <text x="${MARGIN}" y="350" font-family="Menlo" font-size="26" fill="rgb(11, 11, 11)">A take by</text>
-  <text x="${MARGIN}" y="400" font-family="Menlo" font-size="50" fill="#5c5c5c">jess boonekamp</text>
-  <text x="${MARGIN}" y="475" font-family="Menlo" font-size="20" fill="#8b8b8b">jessboonekamp.com</text>
+  ${titleTexts}
+  <text x="${MARGIN}" y="${(firstBaseline + lines.length * lineHeight + 34).toFixed(1)}" font-family="Menlo" font-size="24" fill="#8b8b8b">a take by jess boonekamp</text>
+  <text x="${MARGIN}" y="560" font-family="Menlo" font-size="20" fill="#8b8b8b">jessboonekamp.com</text>
 </svg>`;
 }
 
