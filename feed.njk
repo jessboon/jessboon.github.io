@@ -9,10 +9,12 @@ permalink: "/feed.xml"
   <id>{{ metadata.url }}</id>
   <author><name>{{ metadata.author }}</name></author>
   {%- for post in collections.posts | reverse %}
+  {%- set postUrl = metadata.url ~ (post.url | encodeURI) %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ metadata.url }}{{ post.url }}"/>
-    <id>{{ metadata.url }}{{ post.url }}</id>
+    <link href="{{ postUrl }}"/>
+    <id>{{ postUrl }}</id>
+    <published>{{ post.date | dateToRfc3339 }}</published>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <content type="html">{{ post.templateContent | escape }}</content>
   </entry>

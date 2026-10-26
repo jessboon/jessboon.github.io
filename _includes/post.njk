@@ -4,3 +4,11 @@ layout: layout.njk
 <h1>{{ title }}</h1>
 <p class="date">{{ date | dateDisplay }}</p>
 {{ content | safe }}
+{%- set postUrl = metadata.url ~ page.url %}
+<p class="share">
+  Share:
+  <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ postUrl | urlencode }}">X</a> /
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ postUrl | urlencode }}">LinkedIn</a> /
+  <a href="https://news.ycombinator.com/submitlink?u={{ postUrl | urlencode }}&t={{ title | urlencode }}">Hacker News</a> /
+  <a href="mailto:?subject={{ title | urlencode }}&body={{ postUrl | urlencode }}">Email</a>
+</p>
