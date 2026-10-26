@@ -2,6 +2,7 @@
 layout: post.njk
 title: "Macro decisions barely matter"
 date: 2026-10-27
+permalink: /blog/macro-decisions-barely-matter/
 tags:
   - posts
 ---

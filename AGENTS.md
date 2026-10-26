@@ -1,11 +1,10 @@
 # AGENTS
 
-Two domains — don't mix them up:
+Domains:
 
-- **https://blog.jessboonekamp.com** — this blog. Use it for all blog absolute URLs (feed, metadata, permalinks, sitemaps).
-- **https://jessboonekamp.com** — Jess's portfolio / link page. External references to Jess go here.
+- **https://jessboonekamp.com** — this blog. Use it for all absolute URLs (feed, metadata, permalinks, sitemaps).
 
-Never use boonj.dev.
+Never use blog.jessboonekamp.com. Never use boonj.dev.
 
 ## Commands
 
