@@ -22,4 +22,6 @@ In reality, I see it everywhere. Everyone looking for quick wins, to not have to
 
 Advice from someone not authorised to give it:
 
-Try a paradigm of - *if I can make micro decisions everyday that skew the trajectory of my growth even slightly positive, that's success* and see if you have any success.
+> "*If I can make micro decisions every day that skew the trajectory of my growth even slightly positive, that's success.*" - Me, somewhere on planet earth, 2026
+
+Try the paradigm. See if you have any success.
