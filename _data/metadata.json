@@ -1,7 +1,13 @@
 {
-  "name": "jess boonekamp",
-  "author": "jess boonekamp",
+  "name": "Jess Boonekamp",
+  "author": "Jess Boonekamp",
   "url": "https://jessboonekamp.com",
   "portfolio": "https://jessboonekamp.com",
-  "email": "hello@jessboonekamp.com"
+  "email": "hello@jessboonekamp.com",
+  "description": "Dad, husband, founding engineer and architect. Formerly a senior software engineer II at McKinsey & Company.",
+  "socials": {
+    "x": "https://x.com/JessBoonekamp",
+    "github": "https://github.com/jessboon",
+    "linkedin": "https://www.linkedin.com/in/jess-boonekamp"
+  }
 }

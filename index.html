@@ -2,9 +2,48 @@
 layout: layout.njk
 ---
 <h1>{{ metadata.name }}</h1>
+<p class="intro">Dad. Founding engineer and architect.</p>
+
 <h2>Takes</h2>
 <ul class="posts">
-{% for post in collections.posts | reverse %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="date">{{ post.date | dateDisplay }} · {{ post.rawInput | readingTime }} min</span></li>
-{% endfor %}
+  {% for post in collections.posts | reverse %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="meta"><span class="date">{{ post.date | dateDisplay
+        }}</span><span class="read">{{ post.rawInput | readingTime }} min</span></span></li>
+  {% endfor %}
+</ul>
+
+<h2>Career</h2>
+<ul class="track">
+  <li>
+    <div class="track-meta">Now</div>
+    <div class="track-body">
+      <a href="/career/stealth-startup/"><strong>Stealth startup</strong></a> — <span class="role">Founding
+        engineer</span>
+      <div class="desc">Building software to optimise operations through proactive embedded compute delivering
+        recognisable value in current working models.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">29th June</div>
+    <div class="track-body">
+      <a href="/career/dad/"><strong>Dad</strong></a>
+      <div class="desc">Most important role.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">2022–2026</div>
+    <div class="track-body">
+      <a href="/career/mckinsey/"><strong>McKinsey &amp; Company</strong></a> — <span class="role">Senior software
+        engineer II</span>
+      <div class="desc">Four years architecting AI optimised solutions with leading enterprises across various domains
+        including mining, marketing and sales.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">2021–2022</div>
+    <div class="track-body">
+      <strong>Temperzone</strong> — <span class="role">Software Engineer</span>
+      <div class="desc">Bachelor industry placement leading onto an application engineering gig.</div>
+    </div>
+  </li>
 </ul>

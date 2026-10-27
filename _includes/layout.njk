@@ -40,10 +40,22 @@
     hr { border: none; border-top: 1px dashed #ccc; margin: 2em 0; }
     p.date { margin: 0 0 1.5em; }
     .share { margin: 2.5em 0 0; font-size: 0.85em; color: #999; }
-    .posts { list-style: none; padding: 0; margin: 2em 0; }
-    .posts li { padding: 0.4em 0; border-bottom: 1px solid #eee; }
-    .posts .date { color: #999; font-size: 0.85em; margin-left: 0.5em; }
+    .posts { list-style: none; padding: 0; margin: 1.5em 0; }
+    .posts li { padding: 0.4em 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
+    .posts li a { flex: 1 1 auto; }
+    .posts .meta { display: flex; gap: 0.6em; color: #999; font-size: 0.85em; white-space: nowrap; }
+    .posts .date, .posts .read { color: #999; }
     footer { margin-top: 2em; font-size: 0.85em; }
+    .intro { font-size: 1.05em; color: #555; margin-top: 0.3em; }
+    .track { list-style: none; padding: 0; margin: 1.5em 0; }
+    .track li { display: grid; grid-template-columns: 110px 1fr; gap: 1em; padding: 0.6em 0; }
+    .track-meta { color: #999; font-size: 0.9em; }
+    .track-body strong { font-weight: 600; }
+    .role { font-weight: 500; }
+    .desc { color: #555; font-size: 0.95em; margin-top: 0.2em; }
+    @media (max-width: 520px) {
+      .track li { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
