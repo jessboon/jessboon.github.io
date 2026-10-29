@@ -3,7 +3,7 @@ layout: post.njk
 title: "Product Slop"
 description: "Congratulations humans — $1999 for a phone that folds, one month after the iPhone 18 Pro Max. Nobody asked for the iPhone Duo, so Apple made a video good enough that you'll believe you did."
 date: 2026-10-29
-permalink: /blog/product-slop/
+permalink: /takes/product-slop/
 tags:
   - posts
 ---
