@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Macro decisions barely matter"
+description: "Goals and macro decisions are useless without honesty and self-discipline; micro decisions repeated daily are what actually change outcomes."
 date: 2026-10-27
 permalink: /blog/macro-decisions-barely-matter/
 tags:

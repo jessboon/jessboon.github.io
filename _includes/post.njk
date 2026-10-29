@@ -1,8 +1,9 @@
 ---
 layout: layout.njk
 ---
+<article>
 <h1>{{ title }}</h1>
-<p class="date">{{ date | dateDisplay }}</p>
+<p class="date"><time datetime="{{ date | isoDate }}">{{ date | dateDisplay }}</time></p>
 {{ content | safe }}
 {%- set postUrl = metadata.url ~ page.url %}
 <p class="share">
@@ -12,3 +13,4 @@ layout: layout.njk
   <a href="https://news.ycombinator.com/submitlink?u={{ postUrl | urlencode }}&t={{ title | urlencode }}">Hacker News</a> /
   <a href="mailto:?subject={{ title | urlencode }}&body={{ postUrl | urlencode }}">Email</a>
 </p>
+</article>

@@ -1,14 +1,14 @@
 ---
 layout: layout.njk
 ---
+<main>
 <h1>{{ metadata.name }}</h1>
 <p class="intro">Dad. Founding engineer and architect.</p>
 
 <h2>Takes</h2>
 <ul class="posts">
   {% for post in collections.posts | reverse %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="meta"><span class="date">{{ post.date | dateDisplay
-        }}</span><span class="read">{{ post.rawInput | readingTime }} min</span></span></li>
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="meta"><time class="date" datetime="{{ post.date | isoDate }}">{{ post.date | dateDisplay }}</time><span class="read">{{ post.rawInput | readingTime }} min</span></span></li>
   {% endfor %}
 </ul>
 
@@ -47,3 +47,4 @@ layout: layout.njk
     </div>
   </li>
 </ul>
+</main>
