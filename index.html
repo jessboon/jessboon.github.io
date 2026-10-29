@@ -3,11 +3,11 @@ layout: layout.njk
 ---
 <main>
 <h1 class="site-name">{{ metadata.name | upcase }}</h1>
-<p class="intro">Dad. Founding engineer and architect.</p>
+<p class="intro">Dad · Founding engineer and architect</p>
 
 <h2>Takes</h2>
 <ul class="posts">
-  {% for post in collections.posts | reverse %}
+  {% for post in collections.posts reversed %}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="meta"><time class="date" datetime="{{ post.date | isoDate }}">{{ post.date | dateDisplay }}</time><span class="read">{{ post.rawInput | readingTime }} min read</span></span></li>
   {% endfor %}
 </ul>
@@ -15,7 +15,7 @@ layout: layout.njk
 <h2>Career</h2>
 <ul class="track">
   <li>
-    <div class="track-meta">Now</div>
+    <div class="track-meta">August 2026 - now</div>
     <div class="track-body">
       <a href="/career/stealth-startup/"><strong>Stealth startup</strong></a> — <span class="role">Founding
         engineer</span>
@@ -24,26 +24,45 @@ layout: layout.njk
     </div>
   </li>
   <li>
-    <div class="track-meta">29th June</div>
+    <div class="track-meta">May 2026</div>
+    <div class="track-body">
+      <a href="/career/san-francisco-ai-award/"><strong>San Francisco AI award</strong></a>
+      <div class="desc">Top AI Initiatives award at McKinsey — the reward was a Stanford HAI conference with elite AI tech leaders.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">29th June 2026</div>
     <div class="track-body">
       <a href="/career/dad/"><strong>Dad</strong></a>
       <div class="desc">Most important role.</div>
     </div>
   </li>
   <li>
-    <div class="track-meta">2022–2026</div>
+    <div class="track-meta">Aug 2022 – Aug 2026</div>
     <div class="track-body">
-      <a href="/career/mckinsey/"><strong>McKinsey &amp; Company</strong></a> — <span class="role">Senior software
-        engineer II</span>
-      <div class="desc">Four years architecting AI optimised solutions with leading enterprises across various domains
-        including mining, marketing and sales.</div>
+      <a href="/career/mckinsey/"><strong>McKinsey &amp; Company</strong></a> — <span class="role">Senior Software Engineer</span>
+      <div class="desc">Four years, seven production systems, junior I software engineer to senior II.</div>
     </div>
   </li>
   <li>
     <div class="track-meta">2021–2022</div>
     <div class="track-body">
-      <strong>Temperzone</strong> — <span class="role">Software Engineer</span>
-      <div class="desc">Bachelor industry placement leading onto an application engineering gig.</div>
+      <a href="/career/temperzone/"><strong>Temperzone</strong></a> — <span class="role">Development Engineer</span>
+      <div class="desc">Industry internship developing in-house applications with NodeJS, SQL, JQuery and Azure.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">2018–2021</div>
+    <div class="track-body">
+      <a href="/career/part-time-everything-era/"><strong>The part-time everything era</strong></a>
+      <div class="desc">Merchandising at Fonterra, Kraft Heinz and PAVÉ Limited, beercycle driving, then first dev work at Tech Colab.</div>
+    </div>
+  </li>
+  <li>
+    <div class="track-meta">University</div>
+    <div class="track-body">
+      <a href="/career/ict-degree/"><strong>Bachelor of Information Communication Technology (ICT)</strong></a>
+      <div class="desc">Four years of learning to make computers do what you want, then discovering they mostly do what you tell them.</div>
     </div>
   </li>
 </ul>

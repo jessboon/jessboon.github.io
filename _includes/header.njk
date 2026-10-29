@@ -1,3 +1,3 @@
-{% if page.url != "/" %}
+{% if page.url != "/" and not ("/career/mckinsey/" in page.url and page.url != "/career/mckinsey/") %}
 <header><a href="/">Back</a></header>
 {% endif %}

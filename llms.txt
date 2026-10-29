@@ -13,10 +13,20 @@
 
 ## Career
 
-- [Stealth startup (Now)](https://jessboonekamp.com/career/stealth-startup/): Founding engineer building software to optimise operations through proactive embedded compute.
-- [Dad (29th June)](https://jessboonekamp.com/career/dad/): The most important role.
-- [McKinsey & Company (2022–2026)](https://jessboonekamp.com/career/mckinsey/): Senior software engineer II, architecting AI-optimised solutions for leading enterprises across mining, marketing and sales.
-- [Temperzone (2021–2022)](https://jessboonekamp.com/career/temperzone/): Software engineer via bachelor industry placement leading onto application engineering.
+- [Stealth startup (August 2026 - now)](https://jessboonekamp.com/career/stealth-startup/): Founding engineer building software to optimise operations through proactive embedded compute.
+- [San Francisco AI award (May 2026)](https://jessboonekamp.com/career/san-francisco-ai-award/): Won a Top AI Initiatives award at McKinsey & Company; the reward was a Stanford HAI conference with elite AI tech leaders.
+- [Dad (29th June 2026)](https://jessboonekamp.com/career/dad/): The most important role.
+- [McKinsey & Company (Aug 2022 – Aug 2026)](https://jessboonekamp.com/career/mckinsey/): Senior Software Engineer, four years shipping seven production systems — software engineer to senior across AI-optimised analytics. Engagements:
+  - [Marketing platform deployment](https://jessboonekamp.com/career/mckinsey/marketing-platform-deployment/) (2025 H2, Lead Software Engineer): Adapting and deploying a marketing platform across acquisition, financing, and performance.
+  - [Financial crime: graph analysis platform](https://jessboonekamp.com/career/mckinsey/financial-crime-graph-analysis/) (2025 H1, Lead Software Engineer): Complex graph analysis of people networks across a major Australian bank — −33% analysis time for red-flagged customers.
+  - [Maude Analytics for Pharmaceuticals](https://jessboonekamp.com/career/mckinsey/maude-analytics/) (2024 H2, Tech Lead): FDA report analysis platform — −23% issue analysis time.
+  - [Sherlock](https://jessboonekamp.com/career/mckinsey/sherlock/) (2024 H1, Lead Software Engineer): Large-dataset theme extraction — −35% review analysis time.
+  - [Novated leasing consumer platform](https://jessboonekamp.com/career/mckinsey/novated-leasing-platform/) (2023 H2, Senior II Software Engineer): Consumer-facing advertisement, browse, search, purchase — +12% lead conversion, shipped in 6 weeks.
+  - [Aluminium digital twin](https://jessboonekamp.com/career/mckinsey/aluminium-digital-twin/) (2023 H1, Software Engineer): Simio-based supply-chain optimisation for a large Emirates aluminium producer.
+  - [Digital fitness: affiliate signup & churn](https://jessboonekamp.com/career/mckinsey/digital-fitness-affiliates/) (2022 H2, Software Engineer): Affiliate signup stack for a leading digital fitness media player — −6% signup churn.
+- [Temperzone (2021–2022)](https://jessboonekamp.com/career/temperzone/): Development Engineer internship developing in-house applications with NodeJS, SQL, JQuery and Azure.
+- [Bachelor of Information Communication Technology (ICT)](https://jessboonekamp.com/career/ict-degree/): Four years of learning to make computers do what you want, then discovering they mostly do what you tell them.
+- [The part-time everything era (2018–2021)](https://jessboonekamp.com/career/part-time-everything-era/): Merchandising at Fonterra, Kraft Heinz and PAVÉ Limited, beercycle driving, and first dev work at Tech Colab.
 
 ## Elsewhere
 

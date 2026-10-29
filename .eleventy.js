@@ -15,6 +15,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("isoDate", (date) => new Date(date).toISOString());
   eleventyConfig.addFilter("yearNow", () => String(new Date().getFullYear()));
 
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    const defaultFence = mdLib.renderer.rules.fence;
+    mdLib.renderer.rules.fence = (tokens, idx, options, env, self) => {
+      if (tokens[idx].info.trim() === "mermaid") {
+        return `<div class="mermaid">${mdLib.utils.escapeHtml(tokens[idx].content)}</div>`;
+      }
+      return defaultFence(tokens, idx, options, env, self);
+    };
+  });
+
   eleventyConfig.addFilter("dateDisplay", (date) =>
     new Date(date).toLocaleDateString("en-GB", { year: "numeric", month: "short", day: "numeric" })
   );

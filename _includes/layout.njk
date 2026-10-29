@@ -89,6 +89,14 @@
     p.date { margin: 0 0 1.5em; }
     article { font-size: 17px; line-height: 1.75; letter-spacing: 0.01em; }
     article p { margin: 1.3em 0; }
+    article .impact { display: inline-block; margin: 1.3em 0 0; padding: 0.2em 0.65em; background: #111; color: #fff; border-radius: 3px; font-size: 0.9em; font-weight: 500; letter-spacing: 0.02em; }
+    .mermaid { position: relative; width: 75vw; margin-left: calc(50% - 37.5vw); background: #fafafa; border: 1px solid #eee; border-radius: 6px; padding: 1em; margin-top: 1.5em; margin-bottom: 1.5em; overflow-x: auto; }
+    .mermaid-fullscreen { position: absolute; top: 0.4em; right: 0.4em; border: none; background: transparent; color: #999; font: inherit; font-size: 0.75em; cursor: pointer; padding: 0.2em 0.5em; border-radius: 3px; }
+    .mermaid-fullscreen:hover { color: #111; background: #eee; }
+    .mermaid:fullscreen { padding: 2em; display: flex; align-items: center; justify-content: center; background: #fff; }
+    @media (max-width: 700px) {
+      .mermaid { width: 100%; margin-left: 0; transform: none; }
+    }
     article h1 { font-size: 1.5em; letter-spacing: -0.01em; margin: 1em 0 0.25em; }
     .share { margin: 2.5em 0 0; font-size: 0.85em; color: #999; }
     .posts { list-style: none; padding: 0; margin: 1.5em 0; }
@@ -98,7 +106,13 @@
     .posts .date, .posts .read { color: #999; }
     footer { margin-top: 2em; font-size: 0.85em; }
     .intro { font-size: 1.05em; color: #555; margin-top: 0.3em; }
-    .site-name { font-size: 1.1em; font-weight: 500; letter-spacing: 0.15em; margin-bottom: 0; }
+    .site-name { font-size: 2em; font-weight: 500; letter-spacing: 0.15em; margin-bottom: 0; }
+    .engagements { list-style: none; padding: 0; margin: 1.5em 0; }
+    .engagements li { padding: 0.8em 0; border-bottom: 1px solid #eee; }
+    .engagements .client a { font-weight: 600; }
+    .engagements .role { color: #999; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; margin-left: 0.6em; }
+    .engagements .desc { color: #555; font-size: 0.95em; margin-top: 0.25em; }
+    .engagements .impact { display: inline-block; margin-top: 0.5em; padding: 0.2em 0.65em; background: #111; color: #fff; border-radius: 3px; font-size: 0.85em; font-weight: 500; letter-spacing: 0.02em; }
     .track { list-style: none; padding: 0; margin: 1.5em 0; }
     .track li { display: grid; grid-template-columns: 110px 1fr; gap: 1em; padding: 0.6em 0; }
     .track-meta { color: #999; font-size: 0.9em; }
@@ -109,6 +123,41 @@
       .track li { grid-template-columns: 1fr; }
     }
   </style>
+  {% if diagram %}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'base',
+      themeVariables: {
+        fontFamily: '"Space Grotesk", ui-monospace, Menlo, monospace',
+        fontSize: '14px',
+        primaryColor: '#ffffff',
+        primaryBorderColor: '#111',
+        primaryTextColor: '#111',
+        secondaryColor: '#f5f5f5',
+        tertiaryColor: '#ffffff',
+        lineColor: '#999',
+        clusterBkg: '#fafafa',
+        clusterBorder: '#eee',
+        edgeLabelBackground: '#ffffff'
+      }
+    });
+    await mermaid.run({ querySelector: '.mermaid' });
+    document.querySelectorAll('.mermaid').forEach((el) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'mermaid-fullscreen';
+      btn.title = 'View fullscreen';
+      btn.textContent = 'fullscreen';
+      btn.addEventListener('click', () => {
+        if (document.fullscreenElement) document.exitFullscreen();
+        else el.requestFullscreen?.();
+      });
+      el.appendChild(btn);
+    });
+  </script>
+  {% endif %}
 </head>
 <body>
 {% include "header.njk" %}
