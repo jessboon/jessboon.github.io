@@ -19,3 +19,7 @@ It's almost inconceivable that Apple's iPhone Duo was actually released. It's ge
 What's interesting is people are blogging about how defective it is — like really... did you think a phone with a screen split over a hinge wouldn't be? It's not a new finding that devices with added physical mechanics are more susceptible to breaking.
 
 Who even wants this garbage. Do you really need a screen that can fold and fit in your pocket? I guess you can goon out on TikTok on a bigger screen now.
+
+Can't wait for the new IPhone in November:
+
+![Apple iPhone Scrunched marketing image](/images/product-slop/iphone-scunch-marketing.png)
